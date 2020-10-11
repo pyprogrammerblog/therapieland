@@ -22,13 +22,14 @@ Get inside app service::
     docker-compose run --rm app bash
 
 Run migrations inside docker::
+
     (docker) $ python manage.py migrate
 
 Then exit the docker shell (Ctrl + D)
 
 At this point, you may want to test your installation::
 
-    $ docker-compose run --rm app pytest
+    $ docker-compose run --rm app python manage.py test
 
 Or start working with this app right away::
 
